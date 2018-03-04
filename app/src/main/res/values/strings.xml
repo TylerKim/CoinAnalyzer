@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CoinAnalyzer</string>
+    <string name="fragment_first">CoinInfo</string>
+    <string name="fragment_second">CoinAsset</string>
+    <string name="fragment_third">CoinNews</string>
+
+    <string name="SettingsAct_LangSetting_tv_Title">Change language</string>
+    <string name="SettingsAct_LangSetting_tv_Desc">System language will be changed</string>
+    <string name="SettingsAct_LangSetting_bt">English</string>
+
+    <string name="SettingsAct_Feedback_tv_Title">Send feedback</string>
+    <string name="SettingsAct_Feedback_tv_Desc">Send feedback to us anything like bug reporting, suggestions etc..</string>
+    <string name="SettingsAct_Feedback_bt">Send email</string>
+
+</resources>
