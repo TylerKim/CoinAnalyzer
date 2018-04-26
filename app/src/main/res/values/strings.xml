@@ -12,4 +12,7 @@
     <string name="SettingsAct_Feedback_tv_Desc">Send feedback to us anything like bug reporting, suggestions etc..</string>
     <string name="SettingsAct_Feedback_bt">Send email</string>
 
+    <string name="SettingsAct_Logout_tv_Title">Logout</string>
+    <string name="SettingsAct_Logout_tv_Desc">Logout from CoinAnalyzer</string>
+    <string name="SettingsAct_Logout_bt">Logout</string>
 </resources>

@@ -14,6 +14,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import static com.tistory.quinoa.coinanalyzer.Defines.REQ_SA_SETTINGS;
+import static com.tistory.quinoa.coinanalyzer.Defines.RES_LOGOUT_SUCCESS;
+
 public class MainActivity extends AppCompatActivity
 implements View.OnClickListener,
 CoinInfoFragment.OnCoinInfoFragmentInteractionListener,
@@ -62,7 +65,7 @@ CoinNewsFragment.OnCoinNewsFragmentInteractionListener{
         switch (item.getItemId()){
             case R.id.action_settings:
                 Intent intent = new Intent(this, SettingsActivity.class);
-                startActivity(intent);
+                startActivityForResult(intent, REQ_SA_SETTINGS);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -87,5 +90,18 @@ CoinNewsFragment.OnCoinNewsFragmentInteractionListener{
     @Override
     public void onCoinNewsFragmentInteraction(Uri uri) {
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch (requestCode){
+            case REQ_SA_SETTINGS:
+                if(resultCode == RES_LOGOUT_SUCCESS){
+                    Toast.makeText(MainActivity.this, "RES_LOGOUT_SUCCESS received", Toast.LENGTH_SHORT).show();
+                    finish();
+                }
+                break;
+        }
     }
 }

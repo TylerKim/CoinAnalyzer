@@ -53,4 +53,19 @@
         android:text="@string/SettingsAct_Feedback_bt"
         />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SettingsAct_Logout_tv_Title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SettingsAct_Logout_tv_Desc"/>
+    <Button
+        android:id="@+id/bt_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SettingsAct_Logout_bt"
+        />
+
 </LinearLayout>
